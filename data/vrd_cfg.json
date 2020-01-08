@@ -1,0 +1,20 @@
+{
+    "query" : "person kick ball",
+    "object_list" : "/home/econser/research/active_refer/data/VRD/objects.json",
+    "predicate_list" : "/home/econser/research/active_refer/data/VRD/predicates.json",
+    "dataset" : {
+	"train_anno" : "/home/econser/research/active_refer/data/VRD/annotations_train.json",
+	"train_imgs" : "/home/econser/research/irsg_psu_pdx/data/sg_dataset/sg_train_images",
+	"train_sizes": "/home/econser/research/active_refer/data/VRD/train_image_metadata.json",
+	"test_anno" : "/home/econser/research/active_refer/data/VRD/annotations_test.json",
+	"test_imgs" : "/home/econser/research/irsg_psu_pdx/data/sg_dataset/sg_test_images",
+	"test_sizes": "/home/econser/research/active_refer/data/VRD/test_image_metadata.json"
+    },
+    "models" : {
+	"object_detector" : {
+	    "type" : "RCNN",
+	    "definition" : "/home/econser/usr/py-faster-rcnn/caffe-fast-rcnn/models/bvlc_reference_caffenet/deploy.prototxt",
+	    "weights" : "/home/econser/usr/py-faster-rcnn/caffe-fast-rcnn/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel",
+	    "class_labels" : "/home/econser/usr/py-faster-rcnn/caffe-fast-rcnn/models/bvlc_reference_caffenet/imagenet_class_labels.txt"}
+    }
+}

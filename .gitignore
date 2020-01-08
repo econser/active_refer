@@ -1,0 +1,8 @@
+*.py[cod]
+output/
+models/definitions/vrd_vgg16/vrd_vgg_train_lmdb/
+models/definitions/vrd_vgg16/vrd_vgg_val_lmdb/
+models/weights/
+data/VRD/vrd_vgg/test/
+data/VRD/vrd_vgg/train/
+/data/VRD/fast_bbox_check/output/

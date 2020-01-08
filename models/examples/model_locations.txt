@@ -1,0 +1,11 @@
+Faster RCNN:
+ /home/econser/research/active_refer/models/weights/vrd_faster_500k.caffemodel
+ /home/econser/research/active_refer/models/definitions/vrd_faster/faster_rcnn_end2end/test.prototxt
+
+Fast RCNN:
+ /home/econser/research/active_refer/models/weights/vrd_fast_100k.caffemodel
+ /home/econser/research/active_refer/models/definitions/vrd_fast/test.prototxt
+
+VGG16:
+ /home/econser/research/active_refer/models/weights/vrd_vgg16_7k.caffemodel
+ /home/econser/research/active_refer/models/definitions/vrd_vgg16/vrd_vgg16.prototxt

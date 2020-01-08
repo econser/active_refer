@@ -1,0 +1,24 @@
+{
+    "situation": {
+	"objects": [
+	    {"name" : "person", "id" : "0"},
+	    {"name" : "shirt",  "id" : "1"}],
+	"relationships": [
+	    {"subject" : "0", "predicate" : "wearing", "object" : "shirt"}
+	]
+    },
+
+    "models" : {
+	"config" : "default"
+    },
+
+    "dataset" : {
+	"root" : "/home/econser/research",
+	"object_list" : "active_refer/data/VRD/objects.json",
+	"train_annotations" : {"active_refer/data/VRD/annotations_train.json"},
+	"train_image_dir"   : {"irsg_psu_pdx/data/sg_dataset/sg_train_images"},
+	"test_annotations"  : {"active_refer/data/VRD/annotations_test.json"},
+	"test_image_dir"    : {"irsg_psu_pdx/data/sg_dataset/sg_test_images"}
+    }
+}
+	

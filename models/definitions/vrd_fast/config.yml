@@ -1,0 +1,10 @@
+MODELS_DIR: "/home/econser/research/active_refer/models/definitions/"
+TRAIN:
+  HAS_RPN: False
+  USE_FLIPPED: False
+  IMS_PER_BATCH: 1
+  BBOX_NORMALIZE_TARGETS_PRECOMPUTED: True
+  PROPOSAL_METHOD: selective_search
+  BG_THRESH_LO: 0.0
+TEST:
+  HAS_RPN: False

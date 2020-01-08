@@ -1,0 +1,33 @@
+{
+    "query" : "person wear shirt",
+    "_query" : "person kick ball",
+    "_query" : "sky above building",
+    "object_list" : "/home/econser/research/active_refer/data/VRD/objects.json",
+    "predicate_list" : "/home/econser/research/active_refer/data/VRD/predicates.json",
+    "dataset" : {
+	"train_anno" : "/home/econser/research/active_refer/data/VRD/annotations_train.json",
+	"train_imgs" : "/home/econser/research/irsg_psu_pdx/data/sg_dataset/sg_train_images",
+	"train_sizes": "/home/econser/research/active_refer/data/VRD/train_image_metadata.json",
+	"test_anno" : "/home/econser/research/active_refer/data/VRD/annotations_test.json",
+	"test_imgs" : "/home/econser/research/irsg_psu_pdx/data/sg_dataset/sg_test_images",
+	"test_sizes": "/home/econser/research/active_refer/data/VRD/test_image_metadata.json"
+    },
+    "models" : {
+	"object_classifier_rcnn" : {
+	    "type" : "RCNN",
+	    "definition" : "/home/econser/research/active_refer/models/definitions/vrd_faster/faster_rcnn_end2end/test.prototxt",
+	    "weights" : "/home/econser/research/active_refer/models/weights/vrd_faster_500k.caffemodel",
+	    "class_labels" : "/home/econser/research/active_refer/data/VRD/objects.json"},
+	"object_classifier" : {
+	    "type" : "CNN",
+	    "definition" : "/home/econser/research/active_refer/models/definitions/vrd_vgg16/deploy.prototxt",
+	    "weights" : "/home/econser/research/active_refer/models/weights/vrd_vgg16_iter_10000.caffemodel",
+	    "class_labels" : "/home/econser/research/active_refer/data/VRD/objects.json"},
+	"roi_generator" : {
+	    "type" : "FRCNN",
+	    "definition" : "/home/econser/research/active_refer/models/definitions/vrd_faster/faster_rcnn_end2end/test.prototxt",
+	    "weights" : "/home/econser/research/active_refer/models/weights/vrd_faster_500k.caffemodel",
+	    "class_labels" : "/home/econser/research/active_refer/data/VRD/objects.json"}
+
+    }
+}
